@@ -21,16 +21,31 @@ public class ArrayListController
 	{
 		firstWords.add("hsadusaioh");
 		firstWords.add("baaaaaaaahhhhhhbaaaaaahhhhbaaahhhhbwaaaahh");
+		firstWords.add(1, "Crying Insanely");
 		displayList();
+		firstWords.set(2, "Meme");
+		displayList();
+		firstWords.remove(0);
+		displayList();
+		showOtherLoop();
 	}
 	/**
 	 * Uses a loop for contents that increase by 1.
 	 */
 	private void displayList()
 	{
+		popupDisplay.showList("The size of the list is " + firstWords.size());
 		for(int spot = 0; spot < firstWords.size(); spot++)
 		{
 			popupDisplay.showList("The contents at " + spot + " are " + firstWords.get(spot));
+		}
+	}
+	
+	private void showOtherLoop()
+	{
+		for(String words : firstWords)
+		{
+			popupDisplay.showList(words);
 		}
 	}
 }
