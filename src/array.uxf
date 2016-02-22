@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.1.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>40</x>
+      <y>60</y>
+      <w>290</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Nodes:NodeController.cpp
+--
+NodeController::NodeController()
+NodeController::~NodeController()
+void NodeController::start()
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>330</x>
+      <y>60</y>
+      <w>210</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Nodes::NodeController.h
+--
+class NodeController
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>540</x>
+      <y>60</y>
+      <w>530</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>Nodes::ArrayNode.cpp
+--
+ArrayNode&lt;Type&gt;::ArrayNode() : Node&lt;Type&gt;()
+ArrayNode&lt;Type&gt;::ArrayNode(const Type&amp; value, ArrayNode&lt;Type&gt; * next)
+:Node&lt;Type&gt;(value)
+ArrayNode&lt;Type&gt;::~ArrayNode()
+ArrayNode&lt;Type&gt; get/set
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>40</x>
+      <y>140</y>
+      <w>290</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Nodes::ArrayNode.h
+--
+class ArrayNode:public Node &lt;Type&gt;
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>40</x>
+      <y>220</y>
+      <w>390</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Nodes::CTECArray.cpp
+--
+CTECArray&lt;Type&gt;::CTECArray(int size)
+CTECArray&lt;Type&gt;::~CTECArray()
+Type CTECArray&lt;Type&gt;::get(int pos)
+int CTECArray&lt;Type&gt;::getSize()
+void CTECArray&lt;Type&gt;::set(int pos, const Type&amp; value)
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
